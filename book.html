@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <link rel="stylesheet" href="css/aos-master/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="css/otherani.css" /> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <!-- header  -->
+      <header
+        class="flex md:-full fixed md:overflow-hidden z-[100] mx-auto bg-white px-[35px] items-center justify-between w-full h-[65px]"
+      >
+        <span
+          class="md:w-[15%] text-orange-600 font-extrabold text-sm lg:text-xl text-center cursor-pointer w-[25%] py-[20px] lg:py-[10px] h-[60px]"
+          >Mero<span>Hotel.</span></span
+        >
+        <nav
+          class="nav_links md:static md:min-h-fit h-screen md:w-auto md:items-center md:bg-transparent flex md:flex-row lg:bg-transparent bg-orange-700 w-full duration-[0.5s] md:z-0 z-[100] text-start py-[15px] flex-col absolute top-[0%] left-[-100%]"
+        >
+          <div class="lg:hidden text-end text-lg px-[15px] sm:block md:hidden">
+            <span class="" onclick="onToggleMenu(this)"
+              ><ion-icon
+                class="text-white font-bold text-2xl align-middle"
+                name="close-outline"
+              ></ion-icon
+            ></span>
+          </div>
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] hover:text-neutral-500 mx-[10px] duration-[1s] text-black rounded py-[15px]"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] invisible hover:text-black duration-[1s] text-neutral-500 rounded py-[15px] mx-[10px]"
+            href="#service"
+            >Service</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] invisible hover:text-black duration-[1s] text-neutral-500 rounded py-[15px] mx-[10px]"
+            href="#about"
+            >About</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] invisible hover:text-black duration-[1s] text-neutral-500 rounded py-[15px] mx-[10px]"
+            href="#room"
+            >Rooms</a
+          >
+
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif invisible text-[14px] hover:text-black duration-[1s] text-neutral-500 rounded py-[15px] mx-[10px]"
+            href="#review"
+            >Reviews</a
+          >
+        </nav>
+        <a
+          href="book.html"
+          class="w-[130px] text-center border-2 border-orange-700 shadow-md shadow-orange-400 font-bold font-mono bg-white rounded cursor-pointer px-[10px] text-orange-600 py-[6px] hover:bg-white hover:text-black duration-[1s]"
+        >
+          Book Now
+        </a>
+        <div class="lg:hidden sm:block md:hidden">
+          <span onclick=" onToggleMenu(this)"
+            ><ion-icon
+              class="text-black font-bold text-2xl align-middle"
+              name="menu-outline"
+            ></ion-icon
+          ></span>
+        </div>
+      </header>
+      <!-- header-ends  -->
+      <div
+        class="back w-full flex items-center align-middle place-content-center lg:h-[80vh] h-[75vh]"
+      >
+        <div data-aos="fade-up" data-aos-duration="1500" class="">
+          <h2 class="text-white home text-2xl font-bold text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, voluptatum.
+          </h2>
+          <p
+            class="text-white home mx-auto lg:w-[600px] text-sm font-semibold text-center"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            reiciendis sapiente reprehenderit veniam consectetur consequatur,
+            culpa dolorem fuga repellat animi voluptatum porro facere tenetur
+            rerum mollitia corrupti aperiam. Ratione, cum.
+          </p>
+        </div>
+      </div>
+      <div class="h-fit bg-orange-700 w-full py-[25px]">
+        <div
+          class="lg:w-[90%] w-[95%] mx-auto grid gap-4 lg:grid-cols-4 grid-cols-2"
+        >
+          <div class="place-content-center w-full text-center">
+            <input
+              class="w-full px-[10px] py-[7px] outline-none bg-white rounded-md"
+              type="number"
+              placeholder="Room No."
+            />
+          </div>
+
+          <div class="place-content-center w-full text-center">
+            <input
+              class="w-full px-[10px] py-[7px] text-sm outline-none bg-white rounded-md"
+              type="text"
+              placeholder="Full name"
+            />
+          </div>
+
+          <div class="place-content-center w-full text-center">
+            <input
+              class="w-full px-[10px] py-[7px] text-sm outline-none bg-white rounded-md"
+              type="date"
+              placeholder="Date ."
+            />
+          </div>
+
+          <div
+            class="place-content-center px-[10px] py-[5px] bg-white rounded-md w-full text-center"
+          >
+            <button
+              type="submit"
+              class="bg-orange-700 text-white font-bold rounded-md py-[5px] px-[10px]"
+            >
+              CHECK OUT
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="w-full pt-[70px] py-[20px] bg-white">
+        <h2 class="text-black text-center text-xl font-bold">
+          Our <span class="text-orange-700">Rooms</span>
+        </h2>
+        <div
+          class="lg:w-[90%] mx-auto w-[80%] gap-3 grid pt-[20px] py-[20px] grid-cols-1 lg:grid-cols-4"
+        >
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="w-full p-[10px] card border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="w-full p-[10px] card2 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="w-full p-[10px] card3 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="w-full p-[10px] card4 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="w-full p-[10px] card5 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="w-full p-[10px] card6 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="w-full p-[10px] card7 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="w-full p-[10px] card8 border-2 rounded-md border-orange-700 h-[400px]"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-[200px] rounded-md"
+                src="image/hote.jpg"
+                alt=""
+              />
+              <span
+                onclick="likeUnlike()"
+                class="absolute rounded-full duration-[0.5s] border-2 border-white text-center h-[30px] m-2 w-[30px] like top-0 text-lg place-content-center"
+                ><ion-icon class="love" name="heart-sharp"></ion-icon
+              ></span>
+            </div>
+            <div class="h-[180px] bg-white">
+              <h2 class="font-bold text-lg">Standard Rooms</h2>
+              <span class="text-[12px] font-semibold text-neutral-500"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Error, nostrum?</span
+              >
+
+              <div class="flex justify-between pr-[10px]">
+                <span
+                  ><ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+
+                  <ion-icon
+                    class="text-orange-700 font-bold text-sm align-middle"
+                    name="star-sharp"
+                  ></ion-icon>
+                </span>
+                <span class="font-bold">$500</span>
+              </div>
+              <div class="text-center mt-[20px]">
+                <button
+                  class="bg-orange-700 px-[10px] rounded-md py-[5px] text-white text-center font-semibold"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- space  -->
+        </div>
+      </section>
+      <footer class="w-full bg-orange-200 py-[20px]">
+        <div class="lg:w-[90%] w-[95%] mx-auto">
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">MeroHotel</h2>
+
+              <span class="text-sm font-semibold"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, quidem.</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">Contact</h2>
+
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="location-outline"></ion-icon>
+                Banana island Lagos</span
+              >
+              <span class="text-sm py-[3px] font-semibold block">
+                <ion-icon class="px-[5px]" name="mail-unread-outline"></ion-icon
+                >Merohotel@gmail.com</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">Links</h2>
+
+              <a href="" class="text-sm py-[5px] font-semibold block">Home</a>
+              <a href="" class="text-sm py-[5px] font-semibold block"
+                >Services</a
+              >
+              <a href="" class="text-sm py-[5px] font-semibold block">About</a>
+              <a href="" class="text-sm py-[5px] font-semibold block">FAQ</a>
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">MeroHotel</h2>
+
+              <span class="text-[13px] font-bold text-black"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis voluptates culpa adipisci, enim ratione minima
+                dolorem cupiditate ea totam quam.</span
+              >
+              <p class="text-[12px] text-black">
+                &copy;MeroHotel&bull;2021 All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const like = document.querySelectorAll(".like");
+      function likeUnlike() {
+        like.classList.toggle("bg-white");
+      }
+      const nav_links = document.querySelector(".nav_links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        nav_links.classList.toggle("left-[0%]");
+      }
+    </script>
+    <script src="css/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
