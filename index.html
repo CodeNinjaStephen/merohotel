@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/other.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/aos-master/dist/aos.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <!-- header  -->
+      <header
+        class="flex md:-full fixed md:overflow-hidden z-[100] mx-auto bg-white px-[35px] items-center justify-between w-full h-[65px]"
+      >
+        <span
+          class="md:w-[15%] text-orange-600 font-extrabold text-sm lg:text-xl text-center cursor-pointer w-[25%] py-[20px] lg:py-[10px] h-[60px]"
+          >Mero<span>Hotel.</span></span
+        >
+        <nav
+          class="nav_links md:static md:min-h-fit h-screen md:w-auto md:items-center md:bg-transparent flex md:flex-row lg:bg-transparent bg-orange-700 w-full duration-[0.5s] md:z-0 z-[100] text-start py-[15px] flex-col absolute top-[0%] left-[-100%]"
+        >
+          <div class="lg:hidden text-end text-lg px-[15px] sm:block md:hidden">
+            <span class="" onclick="onToggleMenu(this)"
+              ><ion-icon
+                class="text-black font-bold text-2xl align-middle"
+                name="close-outline"
+              ></ion-icon
+            ></span>
+          </div>
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] hover:text-neutral-500 mx-[10px] duration-[1s] text-black rounded py-[15px]"
+            href="#home"
+            >Home</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] text-black hover:text-neutral-500 duration-[1s] rounded py-[15px] mx-[10px]"
+            href="#service"
+            >Service</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] text-black hover:text-neutral-500 duration-[1s] rounded py-[15px] mx-[10px]"
+            href="#about"
+            >About</a
+          >
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] text-black hover:text-neutral-500 duration-[1s] rounded py-[15px] mx-[10px]"
+            href="#room"
+            >Rooms</a
+          >
+
+          <a
+            onclick="onToggleMenu(this)"
+            class="px-[15px] font-serif text-[14px] text-black hover:text-neutral-500 duration-[1s] rounded py-[15px] mx-[10px]"
+            href="#review"
+            >Reviews</a
+          >
+        </nav>
+        <a
+          href="book.html"
+          class="w-[130px] text-center border-2 border-orange-700 shadow-md shadow-orange-400 font-bold font-mono bg-white rounded cursor-pointer px-[10px] text-orange-600 py-[6px] hover:bg-white hover:text-black duration-[1s]"
+        >
+          Book Now
+        </a>
+        <div class="lg:hidden sm:block md:hidden">
+          <span onclick=" onToggleMenu(this)"
+            ><ion-icon
+              class="text-black font-bold text-2xl align-middle"
+              name="menu-outline"
+            ></ion-icon
+          ></span>
+        </div>
+      </header>
+      <!-- header-ends  -->
+      <section
+        id="home"
+        class="bg-white pt-[100px] lg:h-screen pb-[20px] w-full"
+      >
+        <div class="lg:w-[90%] lg:flex w-[95%] mx-auto">
+          <div class="w-full lg:w-[55%]">
+            <h1 class="text-black animate text-5xl animate font-bold">
+              The Ultimate
+              <span class="text-orange-600 underline">Luxury </span> Hotel
+              <span class="text-orange-600 underline">Experience.</span>
+            </h1>
+            <p class="text-black animate font-semibold py-[10px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit .
+            </p>
+            <p class="text-black animate font-light py-[10px] text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium architecto pariatur commodi praesentium, minima dolore
+              aperiam sit rem expedita laboriosam itaque placeat enim voluptates
+              libero. Aspernatur cumque deleniti voluptatibus fugit quasi
+              impedit, corrupti ducimus ab unde itaque nisi suscipit quas illo
+              saepe molestiae dignissimos enim ipsum totam excepturi officiis
+              vitae repudiandae? Placeat ea, ratione iusto delectus error vero
+              at adipisci?
+            </p>
+            <div class="mt-[20px] flex gap-3">
+              <a
+                href="book.html"
+                class="w-[150px] animate text-center shadow-md shadow-orange-400 font-bold font-mono bg-orange-700 rounded cursor-pointer px-[10px] text-white py-[8px] hover:bg-white hover:text-orange-700 duration-[1s]"
+              >
+                Book Now
+              </a>
+
+              <a
+                href="#room"
+                class="w-[150px] border-2 border-orange-700 animate text-center shadow-md shadow-orange-400 font-bold font-mono rounded cursor-pointer px-[10px] text-orange-700 py-[8px] hover:bg-orange-700 hover:text-white duration-[1s]"
+              >
+                Check Offers
+              </a>
+            </div>
+          </div>
+          <div class="w-full relative lg:mt-0 mt-[20px] lg:w-[45%]">
+            <img
+              class="lg:w-[350px] w-[300px] h-[300px] right-[20px] lg:right-[50px] top-0 mx-auto lg:h-[350px] object-cover animate shadow-lg shadow-orange-600 rounded-full animate lg:pt-0"
+              src="image/hote.jpg"
+              alt=""
+            />
+
+            <img
+              class="lg:w-[300px] animate w-[200px] h-[200px] absolute z-1 top-[110px] mx-auto lg:h-[300px] rounded-full animate shadow-md shadow-orange-600 lg:pt-0"
+              src="image/try222.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="service" class="bg-orange-200 w-full pt-[70px] py-[20px]">
+        <div class="lg:w-[90%] w-[95%] mx-auto">
+          <div>
+            <h2 class="text-neutral-500 text-lg font-bold">Our Service</h2>
+            <h3 class="text-2xl text-black font-bold">
+              Facilities From Our Hotel
+            </h3>
+            <p class="text-neutral-500 text-sm lg:w-[450px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              deserunt exercitationem voluptate, repellendus a sit.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-4 gap-3 pt-[20px] grid-cols-1">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              class="bg-orange-700 hover:bg-orange-300 duration-[0.5s] place-content-center rounded-md h-[250px] p-[10px]"
+            >
+              <h4 class="text-center text-white font-bold text-3xl">
+                <ion-icon name="wifi-outline"></ion-icon>
+              </h4>
+              <h4 class="text-white text-sm font-bold text-center">
+                Free Wifi
+              </h4>
+              <p class="text-white text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente exercitationem fugit laudantium necessitatibus voluptas
+                aspernatur.
+              </p>
+              <a
+                class="underline text-[13px] text-white font-semibold pl-[10px] pt-[20px]"
+                href=""
+                >LEARN MORE</a
+              >
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              class="bg-white hover:bg-orange-300 duration-[0.5s] place-content-center rounded-md h-[250px] p-[10px]"
+            >
+              <h4 class="text-center text-orange-700 font-bold text-3xl">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </h4>
+              <h4 class="text-orange-700 text-sm font-bold text-center">
+                Online Booking
+              </h4>
+              <p class="text-orange-700 text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente exercitationem fugit laudantium necessitatibus voluptas
+                aspernatur.
+              </p>
+              <a
+                class="underline text-orange-700 text-[13px] font-semibold pl-[10px] pt-[20px]"
+                href=""
+                >LEARN MORE</a
+              >
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              class="bg-white hover:bg-orange-300 duration-[0.5s] place-content-center rounded-md h-[250px] p-[10px]"
+            >
+              <h4 class="text-center text-orange-700 font-bold text-3xl">
+                <ion-icon name="people-outline"></ion-icon>
+              </h4>
+              <h4 class="text-orange-700 text-sm font-bold text-center">
+                24/7 Customer Service
+              </h4>
+              <p class="text-orange-700 text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente exercitationem fugit laudantium necessitatibus voluptas
+                aspernatur.
+              </p>
+              <a
+                class="underline text-[13px] text-orange-700 font-semibold pl-[10px] pt-[20px]"
+                href=""
+                >LEARN MORE</a
+              >
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+              class="bg-white hover:bg-orange-300 duration-[0.5s] place-content-center rounded-md h-[250px] p-[10px]"
+            >
+              <h4 class="text-center text-orange-700 font-bold text-3xl">
+                <ion-icon name="fast-food-outline"></ion-icon>
+              </h4>
+              <h4 class="text-orange-700 text-sm font-bold text-center">
+                Fast Food Service
+              </h4>
+              <p class="text-orange-700 text-sm text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente exercitationem fugit laudantium necessitatibus voluptas
+                aspernatur.
+              </p>
+              <a
+                class="underline text-orange-700 text-[13px] font-semibold pl-[10px] pt-[20px]"
+                href=""
+                >LEARN MORE</a
+              >
+            </div>
+            <!-- space  -->
+          </div>
+        </div>
+      </section>
+      <section id="about" class="bg-white pt-[70px] py-[20px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="lg:w-[90%] w-[95%] mt-[20px] mx-auto lg:flex gap-4"
+        >
+          <div class="lg:w-[50%] w-[95%] mx-auto">
+            <img
+              class="h-[350px] mx-auto w-[95%] rounded-md"
+              src="image/try222.webp"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-[50%] pt-[20px] w-[95%] mx-auto">
+            <h2 class="text-black text-xl font-bold">
+              About <span class="text-orange-700">Us</span>
+            </h2>
+            <p class="text-sm pt-[30px]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
+              alias.
+            </p>
+            <p class="text-sm pt-[10px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+              laboriosam a quibusdam labore harum quia dolorem omnis dolore,
+              atque blanditiis quaerat architecto eligendi, vel aliquam eaque
+              neque pariatur. Veritatis, aliquid. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Repellendus quae blanditiis
+              perspiciatis assumenda unde quod nemo culpa magni cumque facilis?
+            </p>
+            <div>
+              <h3 class="text-orange-700 font-bold text-sm pt-[10px]">
+                Reviews
+              </h3>
+              <div class="flex gap-3 mt-[20px]">
+                <div
+                  class="w-[130px] text-center border-2 border-black rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >30<ion-icon
+                      class="align-middle"
+                      name="add-sharp"
+                    ></ion-icon
+                  ></span>
+                  <span class="font-semibold">Books</span>
+                </div>
+
+                <div
+                  class="w-[130px] text-center border-2 border-black rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >3000<ion-icon
+                      class="align-middle"
+                      name="add-sharp"
+                    ></ion-icon
+                  ></span>
+                  <span class="font-semibold">Rooms</span>
+                </div>
+
+                <div
+                  class="w-[130px] text-center border-2 border-black rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >2k<ion-icon
+                      class="align-middle"
+                      name="add-sharp"
+                    ></ion-icon
+                  ></span>
+                  <span class="font-semibold">Happy Clients</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="room" class="w-full bg-orange-200 pt-[70px] py-[20px]">
+        <h2 class="text-black text-center text-sm pt-[10px] font-bold">
+          Our Special <span class="text-orange-700">Rooms</span>
+        </h2>
+        <div class="lg:w-[90%] mx-auto w-[95%]">
+          <div class="grid gap-3 mt-[20px] lg:grid-cols-4 grid-cols-1">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="bg-orange-600 rounded-md h-[350px] p-[7px]"
+            >
+              <img class="h-[150px] w-full" src="image/hote.jpg" alt="" />
+              <div
+                class="bg-white text-center p-[5px] rounded-md mt-[5px] h-[180px]"
+              >
+                <p class="text-sm text-black pt-[10px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto nulla culpa molestias incidunt, amet dolorum quia
+                  sed dolorem ea magnam!
+                </p>
+                <button
+                  class="font-bold mt-[10px] duration-[0.5s] hover:bg-white hover:text-orange-700 bg-orange-700 rounded-md text-white text-center py-[6px] px-[10px]"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="bg-orange-600 rounded-md h-[350px] p-[7px]"
+            >
+              <img class="h-[150px] w-full" src="image/hote.jpg" alt="" />
+              <div
+                class="bg-white text-center p-[5px] rounded-md mt-[5px] h-[180px]"
+              >
+                <p class="text-sm text-black pt-[10px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto nulla culpa molestias incidunt, amet dolorum quia
+                  sed dolorem ea magnam!
+                </p>
+                <button
+                  class="font-bold mt-[10px] duration-[0.5s] hover:bg-white hover:text-orange-700 bg-orange-700 rounded-md text-white text-center py-[6px] px-[10px]"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              class="bg-orange-600 rounded-md h-[350px] p-[7px]"
+            >
+              <img class="h-[150px] w-full" src="image/hote.jpg" alt="" />
+              <div
+                class="bg-white text-center p-[5px] rounded-md mt-[5px] h-[180px]"
+              >
+                <p class="text-sm text-black pt-[10px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto nulla culpa molestias incidunt, amet dolorum quia
+                  sed dolorem ea magnam!
+                </p>
+                <button
+                  class="font-bold mt-[10px] duration-[0.5s] hover:bg-white hover:text-orange-700 bg-orange-700 rounded-md text-white text-center py-[6px] px-[10px]"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2500"
+              class="bg-orange-600 rounded-md h-[350px] p-[7px]"
+            >
+              <img class="h-[150px] w-full" src="image/hote.jpg" alt="" />
+              <div
+                class="bg-white text-center p-[5px] rounded-md mt-[5px] h-[180px]"
+              >
+                <p class="text-sm text-black pt-[10px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto nulla culpa molestias incidunt, amet dolorum quia
+                  sed dolorem ea magnam!
+                </p>
+                <button
+                  class="font-bold mt-[10px] duration-[0.5s] hover:bg-white hover:text-orange-700 bg-orange-700 rounded-md text-white text-center py-[6px] px-[10px]"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <!-- space  -->
+          </div>
+          <div class="text-center mt-[20px]">
+            <button
+              class="font-bold mt-[10px] duration-[0.5s] hover:bg-white hover:text-orange-700 bg-orange-700 rounded-md text-white text-center py-[6px] px-[10px]"
+            >
+              See More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="review" class="bg-white w-full pt-[70px] py-[20px] h-fit">
+        <h2 class="text-black text-center pt-[20px] font-bold text-2xl">
+          What Our <span class="text-orange-700">Clients</span> Says
+        </h2>
+        <div
+          class="main-background pt-[60px] flex items-center justify-center py-[10px]"
+        >
+          <div class="w-[70%] testimonial mx-auto">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              class="text-white testimonial-text w-full bg-orange-700 rounded-md relative lg:h-[300px] h-[450px] shadow-md"
+            >
+              <div
+                class="w-[85%] user-text active-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+              >
+                <div class="place-content-center py-[10px] flex mx-auto">
+                  <img
+                    class="w-[60px] rounded-full h-[60px]"
+                    src="image/test3.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-sm font-semibold">
+                  Lorem ipsum dolor test1 sit amet consectetur adipisicing elit.
+                  Nulla hic eligendi suscipit inventore quas ipsa provident modi
+                  quia aspernatur quae, fugit consectetur! Voluptatum suscipit
+                  accusamus sequi minima, placeat est libero? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Repellendus, mollitia
+                  adipisci incidunt quisquam officiis facere autem
+                </p>
+
+                <span class="font-bold text-[16px] uppercase mt-[30px]"
+                  >Mr Mero , CEO BANT3.</span
+                >
+              </div>
+              <div
+                class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+              >
+                <div class="place-content-center py-[10px] flex mx-auto">
+                  <img
+                    class="w-[60px] rounded-full h-[60px]"
+                    src="image/test1.jpeg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-sm font-semibold">
+                  Lorem ipsum dolor test1 sit amet consectetur adipisicing elit.
+                  Nulla hic eligendi suscipit inventore quas ipsa provident modi
+                  quia aspernatur quae, fugit consectetur! Voluptatum suscipit
+                  accusamus sequi minima, placeat est libero? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Repellendus, mollitia
+                  adipisci incidunt quisquam officiis facere autem2
+                </p>
+
+                <span class="font-bold text-[16px] uppercase mt-[30px]"
+                  >Mr Emekus , CEO BANT2.</span
+                >
+              </div>
+
+              <div
+                class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+              >
+                <div class="place-content-center py-[10px] flex mx-auto">
+                  <img
+                    class="w-[60px] rounded-full h-[60px]"
+                    src="image/test2.jpeg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-sm font-semibold">
+                  Lorem ipsum dolor test1 sit amet consectetur adipisicing elit.
+                  Nulla hic eligendi suscipit inventore quas ipsa provident modi
+                  quia aspernatur quae, fugit consectetur! Voluptatum suscipit
+                  accusamus sequi minima, placeat est libero? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Repellendus, mollitia
+                  adipisci incidunt quisquam officiis facere autem3
+                </p>
+
+                <span class="font-bold text-[16px] uppercase mt-[30px]"
+                  >Mr Victor , CEO BANT31.</span
+                >
+              </div>
+
+              <div
+                class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+              >
+                <div class="place-content-center py-[10px] flex mx-auto">
+                  <img
+                    class="w-[60px] rounded-full h-[60px]"
+                    src="image/test4.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-sm font-semibold">
+                  Lorem ipsum dolor test1 sit amet consectetur adipisicing elit.
+                  Nulla hic eligendi suscipit inventore quas ipsa provident modi
+                  quia aspernatur quae, fugit consectetur! Voluptatum suscipit
+                  accusamus sequi minima, placeat est libero? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Repellendus, mollitia
+                  adipisci incidunt quisquam officiis facere autem4
+                </p>
+
+                <span class="font-bold text-[16px] uppercase mt-[30px]"
+                  >Mr Stephen , CEO BANT10.</span
+                >
+              </div>
+              <!-- space -->
+            </div>
+
+            <div
+              class="testimonial-pic flex gap-3 pt-[20px] items-center justify-center"
+            >
+              <img
+                onclick="showReview()"
+                class="w-[40px] user-pic active-pic h-[40px] rounded-full"
+                src="image/test3.jpg"
+                alt=""
+              />
+
+              <img
+                onclick="showReview()"
+                class="w-[40px] user-pic h-[40px] rounded-full"
+                src="image/test1.jpeg"
+                alt=""
+              />
+
+              <img
+                onclick="showReview()"
+                class="w-[40px] user-pic h-[40px] rounded-full"
+                src="image/test2.jpeg"
+                alt=""
+              />
+
+              <img
+                onclick="showReview()"
+                class="w-[40px] user-pic h-[40px] rounded-full"
+                src="image/test4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="w-full bg-orange-200 py-[20px]">
+        <div class="lg:w-[90%] w-[95%] mx-auto">
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">MeroHotel</h2>
+
+              <span class="text-sm font-semibold"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, quidem.</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">Contact</h2>
+
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="location-outline"></ion-icon>
+                Banana island Lagos</span
+              >
+              <span class="text-sm py-[3px] font-semibold block">
+                <ion-icon class="px-[5px]" name="mail-unread-outline"></ion-icon
+                >Merohotel@gmail.com</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">Links</h2>
+
+              <a href="" class="text-sm py-[5px] font-semibold block">Home</a>
+              <a href="" class="text-sm py-[5px] font-semibold block"
+                >Services</a
+              >
+              <a href="" class="text-sm py-[5px] font-semibold block">About</a>
+              <a href="" class="text-sm py-[5px] font-semibold block">FAQ</a>
+            </div>
+
+            <div class="w-full">
+              <h2 class="text-orange-700 font-bold py-[20px]">MeroHotel</h2>
+
+              <span class="text-[13px] font-bold text-black"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis voluptates culpa adipisci, enim ratione minima
+                dolorem cupiditate ea totam quam.</span
+              >
+              <p class="text-[12px] text-black">
+                &copy;MeroHotel&bull;2021 All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      const nav_links = document.querySelector(".nav_links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        nav_links.classList.toggle("left-[0%]");
+      }
+
+      let userTexts = document.getElementsByClassName("user-text");
+      let userPics = document.getElementsByClassName("user-pic");
+
+      function showReview() {
+        for (userPic of userPics) {
+          userPic.classList.remove("active-pic");
+        }
+        for (userText of userTexts) {
+          userText.classList.remove("active-text");
+        }
+
+        let i = Array.from(userPics).indexOf(event.target);
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+      }
+    </script>
+    <script src="css/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
